@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+            <input class="topButtons" type="button" value="Sign Up" id="signupbtn">
+            <input class="topButtons" type="button" value="Sign In" id="signinbtn">
+            <a id="pageTitle" class="logo-title">ScriBBler</a>
+            <p class="middleText">Explore. Imagine. Create</p>
+        </div>
+    </div>
+    <div class="pButtons">
+            <button id="allposts" class="cbutton" onclick="window.location.href='html/bloglist.html'"><b>All Posts</b></button>
+            <button id="createpost" class="cbutton"><b><span id="createpostspan">Create Post</span></b></button>
+        </div>
+    <div id="Signup_modal" class="signup_modal">
+    <div class="signup-modal-content">
+    <span class="close" data-dismiss="modal">&times;</span>
+        <form>
+            <h1>Get Started</h1>
+            <hr>
+            <b><p>Full Name</p></b>
+            <input type="text" id="fullname" class="signup_input" placeholder="Enter Full Name" required>
+            <b><p>Username</p></b>
+            <input type="text" id="username" class="signup_input" placeholder="Enter Username" required>
+            <b><p>Password</p></b>
+            <input type="password" id="password" class="signup_input" placeholder="Enter Password" required>
+            <b><p>Confirm Password</p></b>
+            <input type="password" id="confirmpassword" class="signup_input" placeholder="Enter Confirm Password" required>
+            <button class="signup_btn" id="signup_btn_id"><b>Sign Up</b></button> 
+        </form>
+    </div>
+    </div>
+        <div id="Signin_modal" class="signin_modal">
+    <div class="signin-modal-content">
+    <span class="close" data-dismiss="modal">&times;</span>
+        <form>
+            <h1>Welcome Back</h1>
+            <hr>
+            <b><p>Username</p></b>
+            <input type="text" id="username" class="signin_input" placeholder="Enter Username" required>
+            <b><p>Password</p></b>
+            <input type="password" id="password" class="signin_input" placeholder="Enter Password" required>
+            <button class="signin_btn" id="signin_btn_id"><b>Sign In</b></button>
+            <div id="div_signup"><p><b>Not a member? </b><a href="javascript:fun1()">Sign UP</a></p></div>
+        </form>
+    </div>
+    </div>
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+<!--
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+-->
+
+</body>
+</html>
