@@ -5,14 +5,53 @@
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>        
     </style>     
 </head>
 <body>
+        <div id="main-container-div">
+
         <div class="header">
-             <!-- Insert code for Sign Up, Sign In button here. 
-               Add code for "ScriBBler" heading and the sub-heading -->
+            <input class="topButtons" type="button" value="Sign Up" id="signupbtn">
+            <input class="topButtons" type="button" value="Sign In" id="signinbtn">
+            <a id="pageTitle" class="logo-title">ScriBBler</a>
+            <p class="middleText">Explore. Imagine. Create</p>
         </div>
+    </div>
+    <div id="Signup_modal" class="signup_modal">
+    <div class="signup-modal-content">
+    <span class="close" data-dismiss="modal">&times;</span>
+        <form>
+            <h1>Get Started</h1>
+            <hr>
+            <b><p>Full Name</p></b>
+            <input type="text" id="fullname" class="signup_input" placeholder="Enter Full Name" required>
+            <b><p>Username</p></b>
+            <input type="text" id="username" class="signup_input" placeholder="Enter Username" required>
+            <b><p>Password</p></b>
+            <input type="password" id="password" class="signup_input" placeholder="Enter Password" required>
+            <b><p>Confirm Password</p></b>
+            <input type="password" id="confirmpassword" class="signup_input" placeholder="Enter Confirm Password" required>
+            <button class="signup_btn" id="signup_btn_id"><b>Sign Up</b></button> 
+        </form>
+    </div>
+    </div>
+        <div id="Signin_modal" class="signin_modal">
+    <div class="signin-modal-content">
+    <span class="close" data-dismiss="modal">&times;</span>
+        <form>
+            <h1>Welcome Back</h1>
+            <hr>
+            <b><p>Username</p></b>
+            <input type="text" id="username" class="signin_input" placeholder="Enter Username" required>
+            <b><p>Password</p></b>
+            <input type="password" id="password" class="signin_input" placeholder="Enter Password" required>
+            <button class="signin_btn" id="signin_btn_id"><b>Sign In</b></button>
+            <div id="div_signup"><p><b>Not a member? </b><a href="javascript:fun1()">Sign UP</a></p></div>
+        </form>
+    </div>
+    </div>
 
     <div class="blogContent">
         <div id="blogTitle" class="blogTite">
@@ -20,20 +59,28 @@
     </div>
 
 <div class="blogAuthor">
-
+    <button type="button" id="editing" onclick="editor()">Edit&nbsp;<i class="fas fa-edit"></i></button>
     <!-- Insert code for Edit/Save button and  -->
 
-    <p>Jimi</p>
+    <p id="jimmi">Jimi</p>
 </div>
 
-<div class="blogText">
+<div class="blogText" id="inaminadica">
     <p id="blogBody">
             Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
     </p>
 </div>
-
+    <button type="button" id="like" onclick="liker()"><i class="fas fa-thumbs-up"></i>&nbsp;Like</button>
+    <p id="liketxt">Be the first one to like this!</p>
     <!-- Insert code for Like button, Comment button, Comment box here-->
-
+        <textarea id="txtarea" rows="7" placeholder="Leave a comment..."></textarea>
+        <button type="button" id="comment" onclick="comments(txtarea)">Comment</button>
+        <p id="allcomments">All Comments</p>
+        <div id="listcomments">
+        
+        </div>
+        
+        <div>
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             
     </script>

@@ -29,7 +29,29 @@ function fun1()
 {
       document.getElementById('Signin_modal').style.display="none";
       document.getElementById('Signup_modal').style.display="block";
-//    var b=document.getElementById("Signin_modal");
-//    a.style.display="none";
-//    b.style.display="block";
 }
+//var modal12 = document.getElementById('myModal12');
+//var btn12 = document.getElementsByClassName("fa fa-trash");
+//var span12 = document.getElementsByClassName("close12"); 
+//btn12.onclick = function() {
+//  modal12.style.display = "block";
+//}
+//span12.onclick = function() {
+//  modal12.style.display = "none";
+//}
+//window.onclick = function(event) {
+//  if (event.target == modal12) {
+//    modal12.style.display = "none";
+//  }
+//}
+function fun2()
+{
+ var modal12=document.getElementById("myModal12").style.display="block";
+}
+function fun3()
+{
+ var modal13=document.getElementById("myModal12").style.display="none";
+}
+
+   
+

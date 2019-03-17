@@ -1,6 +1,6 @@
 .post {
     position: relative;
-    width: 50%;
+    width: 35%;
     height: 60%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
@@ -45,7 +45,7 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 150px;
+    height: 80px;
     margin-bottom: 0 !important;
 }
 
@@ -64,7 +64,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 .signup_modal {
@@ -168,4 +168,55 @@ body {
 .content
 {
     color: black;
+}
+.add-dots
+{
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.hide-text
+{
+    display: none;
+}
+.trash-icon
+{
+    margin-left: 350px;
+}
+.modal12 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content12 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+    color: black;
+}
+#yesbutton
+{
+    background-color: red;
+}
+#nobutton
+{
+    background-color: green;
+}
+#h2-sure
+{
+    text-align: center;
+}
+.close-sure
+{
+    text-align: right;
 }

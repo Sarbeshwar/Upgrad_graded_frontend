@@ -25,6 +25,20 @@ btn2.onclick = function() {
 span2.onclick = function() {
   modal2.style.display = "none";
 }
+var modal3 = document.getElementById('create_modal');
+var btn3 = document.getElementById("createpost");
+var span3 = document.getElementsByClassName("close")[2]; 
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  } 
+}
 function fun1()
 {
       document.getElementById('Signin_modal').style.display="none";
